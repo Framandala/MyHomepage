@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+.logo {
+    width: fit-content;
+    height: 110px;
+}
+
+.shadow {
+    filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.25));
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 35%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(177.14deg, rgba(51, 53, 52, 0.7) 11.99%, rgba(51, 53, 52, 0.3) 161.34%);
+    animation: fadeInDown 1.5s ease forwards;
+
+}
+
+.navbar button {
+    background: linear-gradient(180deg, #20D0F2 13.5%, #13788C 100%);
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    width: auto;
+    border: 1px solid #000000;
+    filter: drop-shadow(-6px -3px 14px rgba(32, 208, 242, 0.27));
+    border-radius: 45px;
+    font-size: 18px;
+    color: #0D0D0D;
+    transition: 0.5s ease;
+
+}
+
+.navbar button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    transform: scale(110%, 110%);
+}
+
+.navbar img {
+    max-width: 100%;
+    filter: drop-shadow(-3px -3px 3px rgba(217, 120, 85, 0.25));
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 1299px) {
+    .shadow {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .shadow {
+        width: 100%;
+        margin: 0;
+        border-radius: 0px;
+    }
+
+    .logo {
+        width: fit-content;
+        height: 90px;
+    }
+}
+
+@media (max-width: 389px) {
+    .navbar button {
+        padding: 3px 9px;
+        font-size: 12px;
+    }
+    .logo {
+        width: fit-content;
+        height: 70px;
+    }
+
+
+}
+
